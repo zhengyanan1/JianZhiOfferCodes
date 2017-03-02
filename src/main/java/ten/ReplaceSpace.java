@@ -1,5 +1,7 @@
 package ten;
 
+import java.util.Arrays;
+
 /**
  * Created by Administrator on 2016/12/23.
  * 请实现一个函数，将一个字符串中的空格替换成“%20”。
@@ -54,6 +56,7 @@ public class ReplaceSpace {
     }
     public static void main(String[] args){
         ReplaceSpace r = new ReplaceSpace();
-        System.out.println("ReplaceSpace.main():" + r.replaceSpace(new StringBuffer("hlkfdjsa hlkj")));
+        System.out.println(r.replaceSpace(new StringBuffer("  hlkfdjsa hlkj   ")));
+        System.out.println(Arrays.toString(" hlkfdjsa hlkj         ".split(" ")));
     }
 }
